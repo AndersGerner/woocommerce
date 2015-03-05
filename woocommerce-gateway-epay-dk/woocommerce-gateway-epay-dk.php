@@ -433,6 +433,8 @@ function add_wc_epay_dk_gateway()
 							
 							break;
 					}
+					$thispage = $_SERVER["PHP_SELF"];
+					header("Refresh: 2; url=$thispage");
 				}
 				catch(Exception $e)
 				{
